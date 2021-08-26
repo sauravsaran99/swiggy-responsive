@@ -1,0 +1,136 @@
+
+
+
+.header {
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    flex-direction: row;
+
+    &_box-1 {
+      flex: 1.5;
+      flex-wrap: nowrap;
+  
+      &-navigation {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+      }
+  
+      &-logo-img {
+          margin: 5rem 0 0 3rem;
+          width: 18.9rem; 
+          height: 5.5rem;
+          cursor: pointer;
+      }
+  
+    }
+  
+    &_box-nav {
+        margin: 5rem 5rem 0 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+  
+        &-1 {
+          text-decoration: none;
+          padding: 2rem 4rem;
+          color: #000;
+      }
+  
+      &-2 {
+          text-decoration: none;
+          padding: 1rem 2.5rem;
+          background-color: #000;
+          color: #fff;
+      }
+    }
+  
+    &_box-h1 {
+        margin-top: 7rem;
+        margin-left: 3rem;
+  
+        &-1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #282c3f;
+            margin: 0;
+            padding: 0;
+        }
+  
+        &-2 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #686b78;
+            margin: 0;
+            padding: 0;
+            
+        }
+    }
+  
+    &_box-input {
+        height: 6rem;
+        display: flex;
+        width: 63rem;
+        margin: 3rem 5rem 0 3rem;
+        text-align: center;
+
+        @include respond(tab-land) {
+            width: 50rem;
+        }
+
+        @include respond(phone) {
+            width: 65rem;
+        }
+  
+      &-1 {
+          flex: 1;
+          border: 1px solid #686b78;
+          outline: none;
+          padding: 2rem;
+      }
+  
+      &-2 {
+          flex: .3;
+          background-color: #fc8019;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 2.5rem 0;
+          color: white;
+          cursor: pointer;
+          font-size: 1.2rem;
+          font-weight: bold;
+      }
+    }
+  
+    &_box-h2 {
+        margin: 3rem 0 0 3rem;
+        font-size: 1.4rem;
+        width: 72%;
+  
+        &-1 {
+            color: #80808bc0;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+  
+        &-2 {
+            font-weight: bold;
+            color: #80808bc0;
+            line-height: 2.5rem;
+            font-size: 1.5rem;
+        }
+  
+        &-2 span {
+            color: #4a4a4bc0;
+        }
+    }
+  
+    &_box-2 {
+      flex: 1.2;
+      background-image: url(/sass/images/background.jfif);
+      background-position: center;
+      background-size: cover;
+    }
+  }

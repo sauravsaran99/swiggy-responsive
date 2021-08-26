@@ -1,0 +1,24 @@
+html {
+    font-family: "Vidaloka", serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+
+    @include respond (tab-land) {
+      font-size: 56%;
+    }
+
+    @include respond (tab-port) {
+      font-size: 40%;
+    }
+
+    @include respond (phone) {
+      font-size: 20%;
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  //   background-color: rgb(189, 137, 214);
+  }
